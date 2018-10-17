@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	    <link rel="stylesheet" href="css/index.css">
+	    <link rel="stylesheet" href="css/shutter.css">
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/shutter.js"></script>
+	    <script src="js/velocity.js"></script>
+	    
+	    <script type="text/javascript">
+		    $(document).ready(function () {
+		        $('nav li').hover(function () {
+		            $(this).find('.sub-menu').show();
+		        }, function () {
+		            $(this).find('.sub-menu').hide(); 
+		        });
+		    });
+		</script>
+		<style>
+		* { margin: 0; padding: 0; }
+		body{
+			height: 10000px;
+		}
+	
+		#header{
+			padding-right: 84px;
+			padding-left: 68px;
+			width: 100%;
+			background: black;
+			position: fixed;
+			z-index: 999;
+			}			
+		#header span{
+			margin-left: 70%;
+			display: inline-block;
+			line-height: inherit;
+			font-size: 12px;
+			color: white;				
+			}
+		#header a{
+			color: white;
+			text-decoration: none;
+			}
+		#header a:hover{
+			color: red;
+			}
+/*		#mu{
+			display: block;
+			list-style: none;
+			margin: 0;
+		    margin-top: 5%;
+		    border: 0;
+		    width: 100%;
+		    background: #464646;
+		    font: inherit;
+		    font-size: 100%;
+		   	position: fixed;
+		   	z-index: 999;
+			}
+		#mu li{
+			float: left;
+		    width: 20%;
+		    height: 40px;
+		    background: #464646;
+		    text-align: center;
+		    line-height: 40px;
+		    color: white;
+			}*/
+		nav{
+			display: block;
+			list-style: none;
+			margin: 0;
+		    margin-top: 5%;
+		    border: 0;
+		    width: 100%;
+		    background: #464646;
+		    font: inherit;
+		    font-size: 100%;
+		   	position: fixed;
+		   	z-index: 999;
+		}
+		nav a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        nav > ul > li {
+			float: left;
+		    width: 15%;
+		    height: 42px;
+		    background: #464646;
+		    text-align: center;
+		    line-height: 40px;
+		    color: white;
+        }
+        nav li ul.sub-menu {
+        display: none;  
+        width: 25%;
+        min-width: 200px;
+        margin: 0 auto;
+   	 	height: 40px;
+   	 	background: red;
+   	 	text-align: center;
+    	line-height: 40px;
+   	 	color: red;
+        }
+        .sub-menu li {
+        	background: deepskyblue;
+            color: red;
+        }
+        .sub-menu li:hover {
+            background: blue;
+            color: red;
+            }
+        .sub-menu li:hover a {
+            color: red;
+            }
+ 
+        ul {
+            list-style: none;
+        }
+		</style>
+	</head>
+	<body>
+		
+		<div id="header" style="height: 80px; line-height: 80px;">
+		<img src="img/header-footer-new3.png" />
+			<span><a href="登录.html">登录</a>&nbsp/&nbsp<a href="注册.html">注册</a></span>
+			
+		</div>
+<!-- 		<div id="mu">
+			<li>男嚡</li>
+			<li>女嚡</li>
+			<li>儿童嚡</li>
+			<li>合作招商</li>
+			<li>lian</li>
+		</div> -->
+
+		<nav>
+	        <ul>
+	            <li>
+	                <a href="#">男鞋</a>
+	                <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#">女鞋 </a>
+	                <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#">儿童鞋 </a>
+	               <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                </ul>
+	            </li>
+	             <li>
+	                <a href="#">合作招商 </a>
+	              
+	            </li>
+	             <li>
+	                <a href="#">联系我们 </a>
+	               
+	            </li>
+	              <li>
+	              	<input type="text" value="搜索" />
+	              </li>
+	        </ul>
+	    </nav>
+			
+	    <div class="shutter">
+	        <div class="shutter-img">
+	            <a href="#" data-shutter-title="Iron Man"><img src="img/shutter_1.jpg" alt="#"></a>
+	            <a href="#" data-shutter-title="Super Man"><img src="img/shutter_2.jpg" alt="#"></a>
+	            <a href="#" data-shutter-title="The Hulk"><img src="img/shutter_3.jpg" alt="#"></a>
+	            <a href="#" data-shutter-title="The your"><img src="img/shutter_4.jpg" alt="#"></a>
+	        </div>
+	        <ul class="shutter-btn">
+	            <li class="prev"></li>
+	            <li class="next"></li>
+	        </ul>
+<!-- 	        <div class="shutter-desc">
+	            <p>Iron Man</p>
+	        </div> -->
+	    </div>
+	    <div class="center">
+			<div class="FristBox">
+				<div class="RMbiaoti">
+					<div class="LeftLine"></div>
+					<div class="RMdanpin">热卖单品</div>
+					<div class="RightLine"></div>
+				</div>
+				<div class="RMimg1">
+					<div class="RM11">
+						<span>运动</span>
+						<img src="img/top_04_1203.jpg">
+					</div>
+					<div class="RM12">
+						<span>休闲</span>
+						<img src="img/top_03_1203.jpg">
+					</div>
+					<div class="RM13">
+						<span>男子</span>
+						<img src="img/top_02_1203.jpg">
+					</div>
+					<div class="RM14">
+						<span>女子</span>
+						<img src="img/top_01_1203.jpg">
+					</div>
+				</div>
+				<div class="CenterLine"></div>
+				<div class="RMimg2">
+					<div class="RM21">
+						<span>运动</span>
+						<img src="img/top_04_1203.jpg">
+					</div>
+					<div class="RM22">
+						<span>休闲</span>
+						<img src="img/top_03_1203.jpg">
+					</div>
+					<div class="RM23">
+						<span>男子</span>
+						<img src="img/top_02_1203.jpg">
+					</div>
+					<div class="RM24">
+						<span>女子</span>
+						<img src="img/top_01_1203.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div class="Scond">
+			    <div class="thumb-wrap">
+			        <ul class="thumb">
+			            <li><img src="img/1.jpg" alt="beautiful-thumbnail-hover-effect-01"></li>
+			            <li><img src="img/2.jpg" alt="beautiful-thumbnail-hover-effect-02"></li>
+			            <li><img src="img/3.jpg" alt="beautiful-thumbnail-hover-effect-03"></li>
+			            <li><img src="img/4.jpg" alt="beautiful-thumbnail-hover-effect-04"></li>
+			            <div class="ImgLine"></div>
+			            <li><img src="img/1.jpg" alt="beautiful-thumbnail-hover-effect-01"></li>
+			            <li><img src="img/2.jpg" alt="beautiful-thumbnail-hover-effect-02"></li>
+			            <li><img src="img/3.jpg" alt="beautiful-thumbnail-hover-effect-03"></li>
+			            <li><img src="img/4.jpg" alt="beautiful-thumbnail-hover-effect-04"></li>
+			        </ul>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

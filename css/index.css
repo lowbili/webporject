@@ -1,0 +1,202 @@
+.center{
+	width: 1200px;
+	height: 2000px;
+	float: left;
+	position: relative;
+	top: 870px;
+	float: left;
+	left: 10%;
+}
+
+/*FristBox热卖单品*/
+.FristBox{
+	width: 100%;
+	height: 400px;
+	/*background: red;*/
+}
+/*标题部分*/
+.RMbiaoti{
+	width: 100%;
+	height: 30px;
+}
+.LeftLine{
+	width: 37.5%;
+	height: 30px;
+	float: left;
+	border-top: 1px solid #b4b4b4;
+	margin-top: 20px;
+}
+.RMdanpin{
+	width: 300px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+}
+.RightLine{
+	width: 37.5%;
+	height: 30px;
+	float: left;
+	border-top: 1px solid #b4b4b4;
+	margin-top: 20px;
+}
+
+/*中间图*/
+.RMimg1{
+	margin-top: 50px;
+	width: 100%;
+	height: 80%;
+	/*background: red;*/
+}
+.RM11,.RM12,.RM13,.RM14{
+	width: 25%;
+	height: 100%;
+	/*background: red;*/
+	/*border-right: 1px solid #b4b4b4;*/
+	float: left;
+	text-align: center;
+	line-height: 100%;
+	font-size: 25px;
+}
+.RM11 img,.RM12 img,.RM13 img,.RM14 img{
+	margin-top: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 80%;
+}
+.CenterLine{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #b4b4b4;
+}
+.RMimg2{
+	margin-top: 50px;
+	width: 100%;
+	height: 80%;
+	/*background: red;*/
+}
+.RM21,.RM22,.RM23,.RM24{
+	width: 25%;
+	height: 100%;
+	/*background: blue;*/
+	/*border-right: 1px solid #b4b4b4;*/
+	float: left;
+	text-align: center;
+	line-height: 100%;
+	font-size: 25px;
+}
+.RM21 img,.RM22 img,.RM23 img,.RM24 img{
+	margin-top: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	height: 80%;
+}
+
+/*图片*/
+.Scond{
+    width: 100%;
+    min-width: 1200px;
+    height: 600px;
+    margin-top: 45%;
+}
+.thumb-wrap {
+    width:100%;
+    min-width:1200px;
+    font-size:100%;
+    text-align: center;
+}
+.thumb-wrap:after {
+    content:"";
+    display:block;
+    clear:both;
+    height:50px;
+}
+.thumb {
+    width:100%;
+    list-style:none;
+    float:left;
+}
+.thumb li {
+    width:25%;
+    float:left;
+    position:relative;
+}
+.thumb li img {
+    max-width:100%;
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.thumb li {
+    -moz-transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    -ms-transition:all 1s ease;
+    transition:all 1s ease;
+}
+.thumb li:hover {
+    -moz-transform:scale(2.6) translate(100px, 38px);
+    -webkit-transform:scale(2.6) translate(100px, 38px);
+    -o-transform:scale(2.6) translate(100px, 38px);
+    -ms-transform:scale(2.6) translate(100px, 38px);
+    transform:scale(2.6) translate(100px, 38px);
+    z-index:2;
+}
+.thumb li:nth-of-type(2):hover {
+    -moz-transform:scale(2.6) translate(0px, 38px);
+    -webkit-transform:scale(2.6) translate(0px, 38px);
+    -o-transform:scale(2.6) translate(0px, 38px);
+    -ms-transform:scale(2.6) translate(0px, 38px);
+    transform:scale(2.6) translate(0px, 38px);
+}
+.thumb li:nth-of-type(3):hover {
+    -moz-transform:scale(2.6) translate(0px, 38px);
+    -webkit-transform:scale(2.6) translate(0px, 38px);
+    -o-transform:scale(2.6) translate(0px, 38px);
+    -ms-transform:scale(2.6) translate(0px, 38px);
+    transform:scale(2.6) translate(0px, 38px);
+}
+.thumb li:nth-of-type(4):hover {
+    -moz-transform:scale(2.6) translate(-100px, 38px);
+    -webkit-transform:scale(2.6) translate(-100px, 38px);
+    -o-transform:scale(2.6) translate(-100px, 38px);
+    -ms-transform:scale(2.6) translate(-100px, 38px);
+    transform:scale(2.6) translate(-100px, 38px);
+}
+.thumb li:nth-of-type(5):hover {
+    -moz-transform:scale(2.6) translate(100px, 38px);
+    -webkit-transform:scale(2.6) translate(100px, 38px);
+    -o-transform:scale(2.6) translate(100px, 38px);
+    -ms-transform:scale(2.6) translate(100px, 38px);
+    transform:scale(2.6) translate(100px, 38px);
+    z-index:2;
+}
+.thumb li:nth-of-type(6):hover {
+    -moz-transform:scale(2.6) translate(0px, 38px);
+    -webkit-transform:scale(2.6) translate(0px, 38px);
+    -o-transform:scale(2.6) translate(0px, 38px);
+    -ms-transform:scale(2.6) translate(0px, 38px);
+    transform:scale(2.6) translate(0px, 38px);
+}
+.thumb li:nth-of-type(7):hover {
+    -moz-transform:scale(2.6) translate(0px, 38px);
+    -webkit-transform:scale(2.6) translate(0px, 38px);
+    -o-transform:scale(2.6) translate(0px, 38px);
+    -ms-transform:scale(2.6) translate(0px, 38px);
+    transform:scale(2.6) translate(0px, 38px);
+}
+.thumb li:nth-of-type(8):hover {
+    -moz-transform:scale(2.6) translate(-100px, 38px);
+    -webkit-transform:scale(2.6) translate(-100px, 38px);
+    -o-transform:scale(2.6) translate(-100px, 38px);
+    -ms-transform:scale(2.6) translate(-100px, 38px);
+    transform:scale(2.6) translate(-100px, 38px);
+}
+
+.ImgLine{
+	width: 100%;
+	height: 300px;
+}

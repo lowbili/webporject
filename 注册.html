@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+			#header{
+		   	
+				padding-right: 84px;
+				padding-left: 68px;
+				width: 100%;
+				background: black;
+				/*position: fixed;*/	
+			}
+			
+			span{
+					margin-left: 70%;
+				display: inline-block;
+				line-height: inherit;
+				font-size: 12px;
+				color: white;
+				
+	               
+			}
+			a{
+				color: white;
+				text-decoration: none;
+			}
+			a:hover{
+				color: red;
+			}
+		
+/*-----------------------------------------------------------------------*/
+/**/
+		</style>
+	</head>
+
+	<body>
+		<div id="header" style="height: 80px; line-height: 80px;">
+			<img src="img/header-footer-new3.png" />
+			<span><a href="index - 副本.html">返回首页</a></span>
+		</div>
+		
+			<nav>
+	        <ul>
+	            <li>
+	                <a href="#">男鞋</a>
+	                <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#">女鞋 </a>
+	                <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#">儿童鞋 </a>
+	               <ul class="sub-menu">
+	                    <li><a href="#">sub1</a></li>
+	                    <li><a href="#">sub2</a></li>
+	                    <li><a href="#">sub3</a></li>
+	                </ul>
+	            </li>
+	             <li>
+	                <a href="#">合作招商 </a>
+	              
+	            </li>
+	             <li>
+	                <a href="#">联系我们 </a>
+	               
+	            </li>
+	        </ul>
+	    </nav>
+		
+			<div class="center">
+			
+			<div class="text1">
+				<a href="#" class="a1">中国 +86<img src="img/topdown.jpg" class="img_topdown"></a>
+				<input type="tel" name="phone" class="a2" value="手机号"  style="border: none; height: 25px;"/>
+			</div>
+			<div class="text2">
+				<a href="#" class="a3">请输入6位短信密码</a>
+				<a href="#" class="a4">获取短信验证码</a>
+			</div>
+			<div class="text3">
+				<a href="#" class="a5">接收语音验证码</a>
+			</div>
+			<div class="input1">
+				<input type="button" value="注册" class="inputdl">
+			</div>
+			<div class="text4">
+				<a class="a6">注册即代表同意</a><a href="#" class="a7">《MMH协议》</a><a href="#" class="a8">《隐私协议》</a><a href="#" class="a9">注册机构号</a>
+			</div>
+			<div class="text5">
+				<a class="a10">已有账号？</a><a href="#" class="a11">登录</a>
+			</div>
+		</div>
+	</body>
+  <script src="js/jquery-1.12.0.js" ></script>
+	    <script type="text/javascript">
+		    $(document).ready(function () {
+		        $('nav li').hover(function () {
+		            $(this).find('.sub-menu').show();
+		        }, function () {
+		            $(this).find('.sub-menu').hide(); 
+		        });
+		    });
+		</script>
+</html>

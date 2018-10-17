@@ -1,0 +1,73 @@
+<head>
+ 
+    <script src="js/jquery-1.12.0.js"></script>
+    <style>
+        nav a {
+            text-decoration: none;
+        }
+ 
+        nav > ul > li {
+            float: left;
+            text-align: center;
+            padding: 0 0.5em;
+        }
+ 
+        nav li ul.sub-menu {
+            display: none;
+            padding-left: 0 !important;
+        }
+ 
+        .sub-menu li {
+            color: white;
+        }
+ 
+            .sub-menu li:hover {
+                background-color: black;
+            }
+ 
+                .sub-menu li:hover a {
+                    color: white;
+                }
+ 
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <ul class="sub-menu">
+                    <li><a href="#">sub1</a></li>
+                    <li><a href="#">sub2</a></li>
+                    <li><a href="#">sub3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Programming </a>
+                <ul class="sub-menu">
+                    <li><a href="#">sub1</a></li>
+                    <li><a href="#">sub2</a></li>
+                    <li><a href="#">sub3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Japanese </a>
+              
+            </li>
+        </ul>
+    </nav>
+</body>
+<script type="text/javascript"> 
+    $(document).ready(function () {
+        $('nav li').hover(function () {
+            $(this).find('.sub-menu').show();
+    
+        }, function () {
+            $(this).find('.sub-menu').hide(); 
+        });
+    });
+</script>
+</html> 
